@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Hi There!"
+            android:textColor="#000000"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Welcome To Safe Water"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/bcakground1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safe Water App"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPersonName|textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/background_login_btn1"
+            android:text="LOGIN"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+        <TextView
+            android:id="@+id/textNoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dont Have An Account? SignUp"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+            app:layout_constraintStart_toStartOf="@+id/btnLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
